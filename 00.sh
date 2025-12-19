@@ -11,3 +11,5 @@ mount /dev/sda1 /mnt/boot
 swapon /dev/sda2
 pacstrap /mnt base base-devel linux linux-firmware sof-firmware grub vim networkmanager
 genfstab /mnt > /mnt/etc/fstab
+mv ./01.sh /mnt/root/01.sh
+arch-chroot /mnt
